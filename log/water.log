@@ -1,0 +1,99 @@
+Namespace(alpha_init=0.0, batch_norm=False, batch_size=512, cuda=True, data_dir='./data/SWaT_Dataset_Attack_v0.csv', graph='None', h_tol=0.0001, hidden_size=32, lambda1=0.0, log_interval=5, lr=0.002, max_iter=20, model='None', n_blocks=1, n_components=1, n_epochs=1, n_hidden=1, name='GANF_Water', output_dir='/home/enyandai/code/checkpoint/model', rho_init=1.0, rho_max=1e+16, seed=18, weight_decay=0.0005)
+Loading dataset
+-1.1010821 -2.468518 -1.1290152 -2.4325068
+Epoch: 1, train -log_prob: -0.25, test -log_prob: -2.31, roc_val: 0.8767, roc_test: 0.7705 ,h: 0.16984939575195312
+rho: 1.0, alpha 0.0, h 0.16984939575195312
+===========================================
+-1.4870193 -2.9885864 -1.5630229 -2.9028065
+Epoch: 2, train -log_prob: -0.82, test -log_prob: -2.75, roc_val: 0.8833, roc_test: 0.7652 ,h: 0.1089019775390625
+rho: 1.0, alpha 0.16984939575195312, h 0.1089019775390625
+===========================================
+-1.5830858 -2.9737263 -1.5540357 -2.92044
+Epoch: 3, train -log_prob: 2.17, test -log_prob: -2.76, roc_val: 0.8834, roc_test: 0.7689 ,h: 0.06237030029296875
+rho: 10.0, alpha 0.16984939575195312, h 0.06237030029296875
+===========================================
+-2.048981 -3.4452784 -2.0425334 -3.3688452
+Epoch: 4, train -log_prob: 0.02, test -log_prob: -3.21, roc_val: 0.8634, roc_test: 0.7636 ,h: 0.03321075439453125
+rho: 10.0, alpha 0.7935523986816406, h 0.03321075439453125
+===========================================
+-1.3401155 -2.4521708 -1.3767326 -2.460982
+Epoch: 5, train -log_prob: 2.47, test -log_prob: -2.28, roc_val: 0.7656, roc_test: 0.7363 ,h: 0.0155487060546875
+rho: 100.0, alpha 0.7935523986816406, h 0.0155487060546875
+===========================================
+-2.1675432 -3.3567538 -2.1354437 -3.3120098
+Epoch: 6, train -log_prob: 0.12, test -log_prob: -3.17, roc_val: 0.8741, roc_test: 0.7651 ,h: 0.0060272216796875
+rho: 100.0, alpha 2.3484230041503906, h 0.0060272216796875
+===========================================
+-2.0511203 -3.1093624 -2.0011985 -3.0835102
+Epoch: 7, train -log_prob: 0.98, test -log_prob: -2.96, roc_val: 0.8751, roc_test: 0.7656 ,h: 0.002109527587890625
+rho: 100.0, alpha 2.9511451721191406, h 0.002109527587890625
+===========================================
+-2.174802 -3.165614 -2.1099446 -3.150142
+Epoch: 8, train -log_prob: -0.07, test -log_prob: -3.03, roc_val: 0.8719, roc_test: 0.7632 ,h: 0.000568389892578125
+rho: 100.0, alpha 3.162097930908203, h 0.000568389892578125
+===========================================
+-1.418484 -2.242597 -1.40083 -2.2324018
+Epoch: 9, train -log_prob: 0.40, test -log_prob: -2.15, roc_val: 0.8671, roc_test: 0.8183 ,h: 0.00011444091796875
+rho: 100.0, alpha 3.2189369201660156, h 0.00011444091796875
+===========================================
+-2.4398491 -3.548349 -2.4290686 -3.5319073
+Epoch: 10, train -log_prob: -1.07, test -log_prob: -3.40, roc_val: 0.8552, roc_test: 0.7519 ,h: 0.0001220703125
+rho: 100.0, alpha 3.2303810119628906, h 0.0001220703125
+===========================================
+-2.0225897 -2.9151032 -1.9856229 -2.8960047
+Epoch: 11, train -log_prob: 2.36, test -log_prob: -2.79, roc_val: 0.8721, roc_test: 0.7484 ,h: 0.000942230224609375
+rho: 1000.0, alpha 3.2303810119628906, h 0.000942230224609375
+===========================================
+-1.9903402 -2.881948 -1.9751995 -2.86814
+Epoch: 12, train -log_prob: -0.75, test -log_prob: -2.76, roc_val: 0.8644, roc_test: 0.7447 ,h: 0.00052642822265625
+rho: 10000.0, alpha 3.2303810119628906, h 0.00052642822265625
+===========================================
+-2.260918 -3.279379 -2.2225397 -3.2691169
+Epoch: 13, train -log_prob: -1.01, test -log_prob: -3.17, roc_val: 0.8584, roc_test: 0.8050 ,h: 9.918212890625e-05
+rho: 100000.0, alpha 3.2303810119628906, h 9.918212890625e-05
+===========================================
+-2.252092 -3.2482724 -2.2047806 -3.2346206
+Epoch: 14, train -log_prob: 0.87, test -log_prob: -3.12, roc_val: 0.8778, roc_test: 0.7811 ,h: 4.57763671875e-05
+rho: 1000000.0, alpha 3.2303810119628906, h 4.57763671875e-05
+===========================================
+Epoch: 15, train -log_prob: 0.46, test -log_prob: -3.02, roc_val: 0.8693, roc_test: 0.7725 ,h: 4.1961669921875e-05
+save model 15 epoch
+Epoch: 16, train -log_prob: -3.40, test -log_prob: -3.90, roc_val: 0.8608, roc_test: 0.7395 ,h: 2.6702880859375e-05
+save model 16 epoch
+Epoch: 17, train -log_prob: -3.68, test -log_prob: -3.93, roc_val: 0.7179, roc_test: 0.7496 ,h: 1.52587890625e-05
+save model 17 epoch
+Epoch: 18, train -log_prob: -3.73, test -log_prob: -3.97, roc_val: 0.8399, roc_test: 0.7550 ,h: 1.1444091796875e-05
+save model 18 epoch
+Epoch: 19, train -log_prob: -3.76, test -log_prob: -3.98, roc_val: 0.7907, roc_test: 0.7594 ,h: 1.1444091796875e-05
+save model 19 epoch
+Epoch: 20, train -log_prob: -3.77, test -log_prob: -4.00, roc_val: 0.8407, roc_test: 0.7589 ,h: 1.1444091796875e-05
+save model 20 epoch
+Epoch: 21, train -log_prob: -3.79, test -log_prob: -3.99, roc_val: 0.8352, roc_test: 0.7599 ,h: 7.62939453125e-06
+Epoch: 22, train -log_prob: -3.80, test -log_prob: -4.02, roc_val: 0.8365, roc_test: 0.7732 ,h: 7.62939453125e-06
+save model 22 epoch
+Epoch: 23, train -log_prob: -3.81, test -log_prob: -4.00, roc_val: 0.7389, roc_test: 0.7651 ,h: 7.62939453125e-06
+Epoch: 24, train -log_prob: -3.82, test -log_prob: -4.03, roc_val: 0.8376, roc_test: 0.7699 ,h: 7.62939453125e-06
+save model 24 epoch
+Epoch: 25, train -log_prob: -3.83, test -log_prob: -4.01, roc_val: 0.8032, roc_test: 0.7626 ,h: 7.62939453125e-06
+Epoch: 26, train -log_prob: -3.83, test -log_prob: -4.05, roc_val: 0.8129, roc_test: 0.7785 ,h: 7.62939453125e-06
+save model 26 epoch
+Epoch: 27, train -log_prob: -3.84, test -log_prob: -4.03, roc_val: 0.7634, roc_test: 0.7720 ,h: 7.62939453125e-06
+Epoch: 28, train -log_prob: -3.85, test -log_prob: -4.05, roc_val: 0.7682, roc_test: 0.7778 ,h: 7.62939453125e-06
+Epoch: 29, train -log_prob: -3.85, test -log_prob: -4.03, roc_val: 0.7887, roc_test: 0.7805 ,h: 7.62939453125e-06
+Epoch: 30, train -log_prob: -3.86, test -log_prob: -4.07, roc_val: 0.8116, roc_test: 0.7847 ,h: 7.62939453125e-06
+save model 30 epoch
+Epoch: 31, train -log_prob: -3.86, test -log_prob: -4.04, roc_val: 0.7788, roc_test: 0.7865 ,h: 7.62939453125e-06
+Epoch: 32, train -log_prob: -3.87, test -log_prob: -4.06, roc_val: 0.7928, roc_test: 0.7918 ,h: 7.62939453125e-06
+Epoch: 33, train -log_prob: -3.87, test -log_prob: -4.02, roc_val: 0.7828, roc_test: 0.7851 ,h: 7.62939453125e-06
+Epoch: 34, train -log_prob: -3.88, test -log_prob: -4.03, roc_val: 0.7377, roc_test: 0.7924 ,h: 7.62939453125e-06
+Epoch: 35, train -log_prob: -3.88, test -log_prob: -4.05, roc_val: 0.7093, roc_test: 0.7917 ,h: 7.62939453125e-06
+Epoch: 36, train -log_prob: -3.89, test -log_prob: -4.05, roc_val: 0.7840, roc_test: 0.8006 ,h: 7.62939453125e-06
+Epoch: 37, train -log_prob: -3.89, test -log_prob: -4.07, roc_val: 0.7289, roc_test: 0.7894 ,h: 7.62939453125e-06
+Epoch: 38, train -log_prob: -3.90, test -log_prob: -4.05, roc_val: 0.8108, roc_test: 0.7993 ,h: 7.62939453125e-06
+Epoch: 39, train -log_prob: -3.90, test -log_prob: -4.06, roc_val: 0.7141, roc_test: 0.7874 ,h: 7.62939453125e-06
+Epoch: 40, train -log_prob: -3.90, test -log_prob: -4.08, roc_val: 0.7490, roc_test: 0.8101 ,h: 7.62939453125e-06
+save model 40 epoch
+Epoch: 41, train -log_prob: -3.90, test -log_prob: -4.05, roc_val: 0.7221, roc_test: 0.7938 ,h: 7.62939453125e-06
+Epoch: 42, train -log_prob: -3.91, test -log_prob: -4.07, roc_val: 0.7360, roc_test: 0.8060 ,h: 7.62939453125e-06
+Epoch: 43, train -log_prob: -3.91, test -log_prob: -4.00, roc_val: 0.8063, roc_test: 0.7809 ,h: 7.62939453125e-06
+Epoch: 44, train -log_prob: -3.92, test -log_prob: -4.06, roc_val: 0.7648, roc_test: 0.8081 ,h: 7.62939453125e-06
