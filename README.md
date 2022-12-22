@@ -10,35 +10,37 @@ torch==1.7.1
 
 ## Overview
 
-* `./models`: Include the code of **GANF**. (Baselines are also covered for reference)
-* `./checkpoint`: The directory to store the model. The trained model for traffic and water system datasets are given in `./checkpoint/eval`
-* `./train_water.py` and `./train_traffic.py`: code to train GANF on corresponding datasets
-* `./data`: The folder to put the dataset. 
+* `./models`: This directory includes the code of GANF as well as basline methods.
+* `./checkpoint`: This directory stores the trained models. The trained models for the datasets **SWaT** and **Metr-LA** are given in `./checkpoint/eval`.
+* `./train_water.py` and `./train_traffic.py`: These programs are used to train GANF on the corresponding datasets.
+* `./data`: This directory is used to store the datasets.
 
 
 ## Datasets
-The PMU datasets are proprietary. Thus, in this repo, we only focus on the experiments on the two public datasets: **SWaT** and **Metr-LA**:
-* **SWaT**: A water system dataset which can be requested from [iTrust](https://itrust.sutd.edu.sg/). And we utilze the attack_v0 data in Dec/2015 as the whole dataset. You may need firstly transformed the file to .csv to directly use our code. Then, it will be split to train/val/test set in `./dataset.py`. 
-* **Metr-LA**: This traffic dataset is only used for exploration experiments which do not require ground-truth outliers. The dataset can be downloader in [here](https://github.com/liyaguang/DCRNN):
+The paper uses three datasets for experiments:
+* **SWaT**: This water system dataset can be requested from [iTrust](https://itrust.sutd.edu.sg/). We utilze the attack_v0 data in Dec/2015 for experimentation. You may need to first convert the file format to .csv to use our code. Then, use `./dataset.py` to perform train/val/test split.
+* **Metr-LA**: This traffic dataset does not include ground-truth outliers. It can be used for exploratory studies of density estimation. The dataset can be downloaded from [this GitHub](https://github.com/liyaguang/DCRNN).
+* **PMU**: This power grid dataset is proprietary and we are unable to offer it for public use.
 
-## Repreoduce the Results
-For training new GANF models on **SWaT**, you can run the bash file:
+## Experiments
+To train a GANF model on **SWaT**, run the bash script:
 ```
 bash train_water.sh
 ```
-A training log on **SWaT** is shown in `./log` as reference to help you reproduce the results.
+The training log will be located at `./log` as a reference to reproduce the results in the paper.
 
-We also provided trained models in `./checkpoint/eval` for evaluation. You can call:
+We also provide trained models in `./checkpoint/eval` for evaluation. You can call:
 ```
 python eval_water.py
 ```
-To train new GANF models on **Metr-LA**, you can simply run:
+
+To train a GANF model on **Metr-LA**, run:
 ```
 python train_traffic.py
 ```
 
-## Cite
-If you find this repo to be useful, please cite our paper. Thank you.
+## Citation
+If you find this repo useful, please cite the paper. Thank you!
 ```
 @inproceedings{
 dai2022graphaugmented,
